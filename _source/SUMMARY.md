@@ -23,8 +23,8 @@
 * [好友管理](pages/sdk_contact.md)
 * [消息管理](pages/sdk_chat.md)
 * [群组管理](pages/sdk_group.md)
-* [实时音视频]()
+* [实时音视频](pages/sdk_voip.md)
 
 ### 其它相关
-* [更新日志](pages/sdk_introduce.md)
-* [下载]()
+* [更新日志](pages/sdk_update.md)
+* [下载](pages/sdk_download.md)
