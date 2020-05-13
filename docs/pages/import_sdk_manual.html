@@ -279,14 +279,14 @@
             
         </li>
     
-        <li class="chapter " data-level="5.8" >
+        <li class="chapter " data-level="5.8" data-path="sdk_voip.html">
             
-                <span>
+                <a href="sdk_voip.html">
             
                     
                     实时音视频
             
-                </span>
+                </a>
             
 
             
@@ -299,9 +299,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="sdk_introduce.html">
+        <li class="chapter " data-level="6.1" data-path="sdk_update.html">
             
-                <a href="sdk_introduce.html">
+                <a href="sdk_update.html">
             
                     
                     更新日志
@@ -312,14 +312,14 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" >
+        <li class="chapter " data-level="6.2" data-path="sdk_download.html">
             
-                <span>
+                <a href="sdk_download.html">
             
                     
                     下载
             
-                </span>
+                </a>
             
 
             
@@ -372,7 +372,7 @@
                                 
                                 <h1 id="&#x624B;&#x52A8;&#x5BFC;&#x5165;sdk"><a name="&#x624B;&#x52A8;&#x5BFC;&#x5165;sdk" class="plugin-anchor" href="#&#x624B;&#x52A8;&#x5BFC;&#x5165;sdk"><i class="fa fa-link" aria-hidden="true"></i></a>&#x624B;&#x52A8;&#x5BFC;&#x5165;SDK</h1>
 <h2 id="11-&#x4E0B;&#x8F7D;sdk"><a name="11-&#x4E0B;&#x8F7D;sdk" class="plugin-anchor" href="#11-&#x4E0B;&#x8F7D;sdk"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x4E0B;&#x8F7D;SDK</h2>
-<p><a href="">&#x4E0B;&#x8F7D;SDK</a>&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;</p>
+<p><a href="../assets/files/sdk.zip" download="ios_im_sdk_v1.0.0.zip" target="_blank"> &#x4E0B;&#x8F7D;SDK </a>&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;</p>
 <pre><code class="lang-objc">libElingIM.a
 ELClient.h
 ELUserManager.h
@@ -397,12 +397,32 @@ ELUserInformation.h
 </code></pre>
 <p><br></p>
 <h2 id="12-&#x5BFC;&#x5165;sdk"><a name="12-&#x5BFC;&#x5165;sdk" class="plugin-anchor" href="#12-&#x5BFC;&#x5165;sdk"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x5BFC;&#x5165;SDK</h2>
+<h3 id="&#x6DFB;&#x52A0;&#x5230;&#x9879;&#x76EE;&#x4E2D;"><a name="&#x6DFB;&#x52A0;&#x5230;&#x9879;&#x76EE;&#x4E2D;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x5230;&#x9879;&#x76EE;&#x4E2D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x5230;&#x9879;&#x76EE;&#x4E2D;</h3>
 <p>&#x5C06;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x5DE5;&#x7A0B;&#x7684;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5E76;&#x52FE;&#x9009;&#x622A;&#x56FE;&#x4E2D;&#x6807;&#x6CE8;&#x7684;&#x4E09;&#x9879;&#x3002;</p>
 <p><img src="../assets/images/add_sdk.png" alt=""></p>
 <p><br></p>
-<p>&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x5C5E;&#x6027;</p>
+<h3 id="&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x5C5E;&#x6027;"><a name="&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x5C5E;&#x6027;" class="plugin-anchor" href="#&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x7F6E;&#x5DE5;&#x7A0B;&#x5C5E;&#x6027;</h3>
 <p>&#x5411; <code>Build Phases</code> &#x2799; <code>Link Binaries With Libraries</code> &#x4E2D;&#x6DFB;&#x52A0;SDK&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#x3002;</p>
-<p><img src="../assets/images/add_sdk.png" alt=""></p>
+<p><img src="../assets/images/add_sys_lib.png" alt=""></p>
+<p><br></p>
+<p>&#x8BBE;&#x7F6E; <code>Building Settings</code> &#x2799; <code>Enable Bitcode</code> &#x4E3A; <code>NO</code>&#x3002;</p>
+<p><img src="../assets/images/add_sys_set.png" alt=""></p>
+<p><br></p>
+<p>&#x4FEE;&#x6539;&#x9879;&#x76EE;&#x67B6;&#x6784;&#x3002;&#x8BBE;&#x7F6E; <code>Building Settings</code> &#x2799; <code>Valid Architectures</code> &#x4E3A; <code>arm64 arm64e</code>&#x3002;</p>
+<p><img src="../assets/images/add_sys_arch.png" alt=""></p>
+<h3 id="&#x6DFB;&#x52A0;-sdk-&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9;-pod-&#x5E93;&#x3002;"><a name="&#x6DFB;&#x52A0;-sdk-&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9;-pod-&#x5E93;&#x3002;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;-sdk-&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9;-pod-&#x5E93;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0; <code>SDK</code> &#x6240;&#x4F9D;&#x8D56;&#x7684;&#x7B2C;&#x4E09;&#x65B9; <code>pod</code> &#x5E93;&#x3002;</h3>
+<p>&#x5728;&#x9879;&#x76EE;&#x7684; <code>Podfile</code> &#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-ruby">  pod <span class="hljs-string">&apos;XCMacros&apos;</span>, <span class="hljs-string">&apos;~&gt; 1.0.5&apos;</span>
+  pod <span class="hljs-string">&apos;FMDB&apos;</span>, <span class="hljs-string">&apos;~&gt; 2.7.5&apos;</span>
+  pod <span class="hljs-string">&apos;MJExtension&apos;</span>, <span class="hljs-string">&apos;~&gt; 3.2.1&apos;</span>
+  pod <span class="hljs-string">&apos;AliyunOSSiOS&apos;</span>, <span class="hljs-string">&apos;~&gt; 2.10.8&apos;</span>
+  pod <span class="hljs-string">&apos;XCDateUnit&apos;</span>, <span class="hljs-string">&apos;~&gt; 0.0.5&apos;</span>
+  pod <span class="hljs-string">&apos;XCBaseModule&apos;</span>
+</code></pre>
+<p>&#x8FDB;&#x5165;&#x5230; <code>Podfile</code> &#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-zsh">pod install
+</code></pre>
+<p>&#x6267;&#x884C;&#x5B8C;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x6253;&#x5F00;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x8FD0;&#x884C;&#x5373;&#x53EF;&#x3002;</p>
 
                                 
                                 </section>
@@ -446,7 +466,7 @@ ELUserInformation.h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"手动导入SDK","level":"4.2","depth":1,"next":{"title":"SDK基本说明","level":"5.1","depth":1,"path":"pages/sdk_introduce.md","ref":"pages/sdk_introduce.md","articles":[]},"previous":{"title":"Pod导入SDK","level":"4.1","depth":1,"path":"pages/import_sdk_pod.md","ref":"pages/import_sdk_pod.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/import_sdk_manual.md","mtime":"2020-05-09T09:49:14.064Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-11T07:16:58.284Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"手动导入SDK","level":"4.2","depth":1,"next":{"title":"SDK基本说明","level":"5.1","depth":1,"path":"pages/sdk_introduce.md","ref":"pages/sdk_introduce.md","articles":[]},"previous":{"title":"Pod导入SDK","level":"4.1","depth":1,"path":"pages/import_sdk_pod.md","ref":"pages/import_sdk_pod.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/import_sdk_manual.md","mtime":"2020-05-13T08:44:10.603Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T11:35:04.266Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -477,10 +497,6 @@ ELUserInformation.h
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
