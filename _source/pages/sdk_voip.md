@@ -47,12 +47,6 @@
  */
 - (void)callDidEnd:(ELMessage *)aMessage;
 
-/**
- *  收到实时数据流，此方法会调用多次
- *
- *  @param data 二进制流
- */
-- (void)onReceiveRealtimeData:(NSData *)data;
 ```
 
 <br />
@@ -200,3 +194,27 @@ ELCallType type = ELCallTypeAudio;
 /// 配置通话项
 - (void)setCallOptions:(ELCallOptions *)options;
 ```
+
+<br />
+
+#### 通话录制
+
+`SDK` 提供了对通话过程进行录制的功能。
+
+```objc
+/**
+ *  开始录制（目前只支持音频的录制）
+ *
+ * @param dirPath 录制的文件存储目录
+ */
+- (void)startCallRecord:(NSString *)dirPath;
+
+/**
+ *  停止录制（生成的是 wav 格式的音频文件）
+ */
+- (void)stopCallRecord:(void(^)(ELMessage *callSession, NSString *filePath, NSError *error))aCompletionBlock;
+```
+
+> 1. 目前只支持音频的录制。
+> 2. 只能录制本方的音频数据。
+> 3. 生成的是 wav 格式的音频文件。

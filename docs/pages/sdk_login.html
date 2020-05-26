@@ -41,6 +41,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -135,14 +143,14 @@
         
         
     
-        <li class="chapter " data-level="3.1" >
+        <li class="chapter " data-level="3.1" data-path="app_register.html">
             
-                <span>
+                <a href="app_register.html">
             
                     
                     注册并创建应用
             
-                </span>
+                </a>
             
 
             
@@ -370,8 +378,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <!-- toc -->
-<h1 id="&#x767B;&#x5F55;-elloginmanager"><a name="&#x767B;&#x5F55;-elloginmanager" class="plugin-anchor" href="#&#x767B;&#x5F55;-elloginmanager"><i class="fa fa-link" aria-hidden="true"></i></a>&#x767B;&#x5F55; <code>ELLoginManager</code></h1>
+                                <h1 id="&#x767B;&#x5F55;-elloginmanager"><a name="&#x767B;&#x5F55;-elloginmanager" class="plugin-anchor" href="#&#x767B;&#x5F55;-elloginmanager"><i class="fa fa-link" aria-hidden="true"></i></a>&#x767B;&#x5F55; <code>ELLoginManager</code></h1>
 <p>&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x7C7B;&#xFF0C;&#x8D1F;&#x8D23;IM&#x7528;&#x6237;&#x7684;&#x6CE8;&#x518C;&#x3001;&#x767B;&#x5F55;&#x3001;&#x767B;&#x51FA;&#x4EE5;&#x53CA;&#x76D1;&#x542C;&#x767B;&#x5F55;&#x72B6;&#x6001;&#x76F8;&#x5173;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
 <p><br></p>
 <h2 id="&#x534F;&#x8BAE;-elloginmanagerdelegate"><a name="&#x534F;&#x8BAE;-elloginmanagerdelegate" class="plugin-anchor" href="#&#x534F;&#x8BAE;-elloginmanagerdelegate"><i class="fa fa-link" aria-hidden="true"></i></a>&#x534F;&#x8BAE; <code>ELLoginManagerDelegate</code></h2>
@@ -391,7 +398,7 @@
 <p><br></p>
 <h2 id="api&#x4ECB;&#x7ECD;"><a name="api&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#api&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>API&#x4ECB;&#x7ECD;</h2>
 <h3 id="&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5B9E;&#x4F8B;"><a name="&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5B9E;&#x4F8B;" class="plugin-anchor" href="#&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5B9E;&#x4F8B;</h3>
-<p>SDK&#x5185;&#x90E8;&#x5DF2;&#x7ECF;&#x5C06;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;&#x6302;&#x8F7D;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x4F8B;&#x4E0A;&#xFF0C;&#x56E0;&#x6B64;&#x5916;&#x90E8;&#x65E0;&#x9700;&#x518D;&#x5B9E;&#x4F8B;&#x5316;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x7C7B;&#xFF0C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x4F8B;&#x6765;&#x83B7;&#x53D6;&#x3002;</p>
+<p><code>SDK</code> &#x5185;&#x90E8;&#x5DF2;&#x7ECF;&#x5C06;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;&#x6302;&#x8F7D;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x4F8B;&#x4E0A;&#xFF0C;&#x56E0;&#x6B64;&#x5916;&#x90E8;&#x65E0;&#x9700;&#x518D;&#x5B9E;&#x4F8B;&#x5316;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x7C7B;&#xFF0C;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x4F8B;&#x6765;&#x83B7;&#x53D6;&#x3002;</p>
 <pre><code class="lang-objc"><span class="hljs-comment">/// &#x83B7;&#x53D6;&#x767B;&#x5F55;&#x5B9E;&#x4F8B;</span>
 ELLoginManager *login = [ELClient sharedClient].loginManager;
 </code></pre>
@@ -445,7 +452,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
 </code></pre>
 <p><br></p>
 <h3 id="&#x767B;&#x51FA;"><a name="&#x767B;&#x51FA;" class="plugin-anchor" href="#&#x767B;&#x51FA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x767B;&#x51FA;</h3>
-<p>&#x9000;&#x51FA;&#x767B;&#x5F55;&#x540E;&#xFF0C;SDK&#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;&#x5728;&#x672C;&#x5730;&#x7684;&#x7528;&#x6237;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x9000;&#x51FA;&#x767B;&#x5F55;&#x540E;&#xFF0C;<code>SDK</code> &#x4F1A;&#x6E05;&#x7A7A;&#x7F13;&#x5B58;&#x5728;&#x672C;&#x5730;&#x7684;&#x7528;&#x6237;&#x6570;&#x636E;&#x3002;</p>
 <pre><code class="lang-objc"><span class="hljs-comment">/**
  *  &#x9000;&#x51FA;&#x767B;&#x5F55;
  *
@@ -473,7 +480,9 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
 [[ELClient sharedClient].loginManager addDelegate:<span class="hljs-keyword">self</span>];
 [[ELClient sharedClient].loginManager removeDelegate:<span class="hljs-keyword">self</span>];
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; e-ling.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-05-19
+</span></footer>
                                 
                                 </section>
                             
@@ -516,7 +525,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"登录管理","level":"5.3","depth":1,"next":{"title":"用户管理","level":"5.4","depth":1,"path":"pages/sdk_user.md","ref":"pages/sdk_user.md","articles":[]},"previous":{"title":"客户端","level":"5.2","depth":1,"path":"pages/sdk_client.md","ref":"pages/sdk_client.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/sdk_login.md","mtime":"2020-05-09T10:18:53.652Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T11:35:04.266Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"登录管理","level":"5.3","depth":1,"next":{"title":"用户管理","level":"5.4","depth":1,"path":"pages/sdk_user.md","ref":"pages/sdk_user.md","articles":[]},"previous":{"title":"客户端","level":"5.2","depth":1,"path":"pages/sdk_client.md","ref":"pages/sdk_client.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro","lightbox","tbfed-pagefooter"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy e-ling.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/icon.png","bookmark":"./source/images/icon.png","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/sdk_login.md","mtime":"2020-05-19T07:11:19.538Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T07:48:31.506Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -547,6 +556,10 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         

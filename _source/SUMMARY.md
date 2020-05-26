@@ -9,7 +9,7 @@
 
 
 ### 创建应用
-* [注册并创建应用]()
+* [注册并创建应用](pages/app_register.md)
 
 ### SDK集成指南
 * [Pod导入SDK](pages/import_sdk_pod.md)

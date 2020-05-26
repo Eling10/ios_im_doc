@@ -319,7 +319,7 @@ NSInteger unreadMessagesCount = conversation.unreadMessagesCount;
 
 ### 发送消息
 
-发送消息时，对于带附件的消息体（图片、语音、视频等），SDK 内部会自动将附件上传到服务器上。
+发送消息时，对于带附件的消息体（图片、语音、视频等），`SDK` 内部会自动将附件上传到服务器上。
 
 ```objc
 /**

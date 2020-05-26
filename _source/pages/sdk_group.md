@@ -147,7 +147,7 @@
  *  @param aGroupId 群组ID
  *  @param aCompletionBlock 完成的回调
  */
-- (void)addMembers:(NSArray<ELUserInformation *> *)aUsers
+- (void)addMembers:(NSArray<NSString *> *)aUsers
            toGroup:(NSString *)aGroupId
         completion:(void (^)(NSError *aError))aCompletionBlock;
         
@@ -167,7 +167,7 @@
  *  @param aGroupId 群组ID
  *  @param aCompletionBlock 完成的回调
  */
-- (void)removeMembers:(NSArray<ELUserInformation *> *)aUsers
+- (void)removeMembers:(NSArray<NSString *> *)aUsers
             fromGroup:(NSString *)aGroupId
            completion:(void (^)(NSError *aError))aCompletionBlock;
            

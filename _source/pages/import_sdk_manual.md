@@ -4,27 +4,8 @@
 <a href="../assets/files/sdk.zip" download="ios_im_sdk_v1.0.0.zip" target="_blank"> 下载SDK </a>，其中包括
 
 ```objc
-libElingIM.a
-ELClient.h
-ELUserManager.h
-ELLoginManager.h
-ELChatManager.h
-ELGroupManager
-ELCallManager.h
-ELContactManager.h
-ELConversation.h
-ELMessage.h
-ELMessageBody.h
-ELTextMessageBody.h
-ELFileMessageBody.h
-ELImageMessageBody.h
-ELVoiceMessageBody.h
-ELVideoMessageBody.h
-ELCallMessageBody.h
-ELVideoCallMessageBody.h
-ELAudioCallMessageBody.h
-ELGroup.h
-ELUserInformation.h
+ElingIM.h
+ElingIM.framework
 ```
 
 <br/>
@@ -51,9 +32,17 @@ ELUserInformation.h
 
 <br />
 
+向 `Building Settings` ➙ `Other Linker Flags` 中添加 `-all_load` 或 `-force_load` 选项。
+
+![](../assets/images/add_sys_link.png)
+
+<br />
+
 修改项目架构。设置 `Building Settings` ➙ `Valid Architectures` 为 `arm64 arm64e`。
 
 ![](../assets/images/add_sys_arch.png)
+
+<br />
 
 ### 添加 `SDK` 所依赖的第三方 `pod` 库。
 
@@ -65,7 +54,8 @@ ELUserInformation.h
   pod 'MJExtension', '~> 3.2.1'
   pod 'AliyunOSSiOS', '~> 2.10.8'
   pod 'XCDateUnit', '~> 0.0.5'
-  pod 'XCBaseModule'
+  pod 'XCApplicationHelper', '~> 0.0.1'
+  pod 'XCCategory', '~> 1.0.8'
 ```
 
 进入到 `Podfile` 所在的目录，执行以下命令：

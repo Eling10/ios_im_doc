@@ -41,6 +41,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -135,14 +143,14 @@
         
         
     
-        <li class="chapter " data-level="3.1" >
+        <li class="chapter " data-level="3.1" data-path="app_register.html">
             
-                <span>
+                <a href="app_register.html">
             
                     
                     注册并创建应用
             
-                </span>
+                </a>
             
 
             
@@ -372,7 +380,7 @@
                                 
                                 <h1 id="&#x597D;&#x53CB;&#x7BA1;&#x7406;-elcontactmanager"><a name="&#x597D;&#x53CB;&#x7BA1;&#x7406;-elcontactmanager" class="plugin-anchor" href="#&#x597D;&#x53CB;&#x7BA1;&#x7406;-elcontactmanager"><i class="fa fa-link" aria-hidden="true"></i></a>&#x597D;&#x53CB;&#x7BA1;&#x7406; <code>ELContactManager</code></h1>
 <p>&#x7BA1;&#x7406;&#x597D;&#x53CB;&#x7684;&#x57FA;&#x672C;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982;&#x6DFB;&#x52A0;&#x3001;&#x79FB;&#x9664;&#x4EE3;&#x7406;&#xFF0C;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x597D;&#x53CB;&#x7B49;&#x3002;</p>
-<p>SDK&#x5BF9;&#x4E8E;&#x975E;&#x597D;&#x53CB;&#x5173;&#x7CFB;&#x7684;&#x53CC;&#x65B9;&#x662F;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x5355;&#x804A;&#x7684;&#x3002;</p>
+<p>&#x975E;&#x597D;&#x53CB;&#x5173;&#x7CFB;&#x7684;&#x53CC;&#x65B9;&#x662F;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x5355;&#x804A;&#x7684;&#x3002;</p>
 <p><br></p>
 <h2 id="&#x534F;&#x8BAE;-elcontactmanagerdelegate"><a name="&#x534F;&#x8BAE;-elcontactmanagerdelegate" class="plugin-anchor" href="#&#x534F;&#x8BAE;-elcontactmanagerdelegate"><i class="fa fa-link" aria-hidden="true"></i></a>&#x534F;&#x8BAE; <code>ELContactManagerDelegate</code></h2>
 <p>&#x597D;&#x53CB;&#x7BA1;&#x7406;&#x7C7B;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x7528;&#x6765;&#x76D1;&#x542C;&#x63A5;&#x6536;&#x597D;&#x53CB;&#x8BF7;&#x6C42;&#x3001;&#x5220;&#x9664;&#x7B49;&#x56DE;&#x8C03;&#x3002;</p>
@@ -413,7 +421,7 @@
 [[ELClient sharedClient].contactManager getContactsWithCompletion:^(<span class="hljs-built_in">NSArray</span>&lt;ELUserInformation *&gt; *aList, <span class="hljs-built_in">NSError</span> *aError) {}];
 </code></pre>
 <blockquote>
-<p>&#x6CE8;&#xFF1A;&#x597D;&#x53CB;&#x6570;&#x636E;&#x90FD;&#x662F;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x83B7;&#x53D6;&#x7684;&#xFF0C;SDK&#x5185;&#x90E8;&#x4E0D;&#x4F1A;&#x5BF9;&#x597D;&#x53CB;&#x6570;&#x636E;&#x505A;&#x5B58;&#x50A8;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x597D;&#x53CB;&#x6570;&#x636E;&#x90FD;&#x662F;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x83B7;&#x53D6;&#x7684;&#xFF0C;<code>SDK</code> &#x5185;&#x90E8;&#x4E0D;&#x4F1A;&#x5BF9;&#x597D;&#x53CB;&#x6570;&#x636E;&#x505A;&#x5B58;&#x50A8;&#x3002;</p>
 </blockquote>
 <p><br></p>
 <h3 id="&#x67E5;&#x627E;&#x8054;&#x7CFB;&#x4EBA;"><a name="&#x67E5;&#x627E;&#x8054;&#x7CFB;&#x4EBA;" class="plugin-anchor" href="#&#x67E5;&#x627E;&#x8054;&#x7CFB;&#x4EBA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x627E;&#x8054;&#x7CFB;&#x4EBA;</h3>
@@ -482,7 +490,9 @@
 [[ELClient sharedClient].contactManager addDelegate:<span class="hljs-keyword">self</span>];
 [[ELClient sharedClient].contactManager removeDelegate:<span class="hljs-keyword">self</span>];
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; e-ling.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-05-19
+</span></footer>
                                 
                                 </section>
                             
@@ -525,7 +535,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"好友管理","level":"5.5","depth":1,"next":{"title":"消息管理","level":"5.6","depth":1,"path":"pages/sdk_chat.md","ref":"pages/sdk_chat.md","articles":[]},"previous":{"title":"用户管理","level":"5.4","depth":1,"path":"pages/sdk_user.md","ref":"pages/sdk_user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/sdk_contact.md","mtime":"2020-05-09T11:30:00.808Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T11:35:04.266Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"好友管理","level":"5.5","depth":1,"next":{"title":"消息管理","level":"5.6","depth":1,"path":"pages/sdk_chat.md","ref":"pages/sdk_chat.md","articles":[]},"previous":{"title":"用户管理","level":"5.4","depth":1,"path":"pages/sdk_user.md","ref":"pages/sdk_user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","page-toc-button","back-to-top-button","-lunr","-search","search-pro","lightbox","tbfed-pagefooter"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy e-ling.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false},"favicon":{"shortcut":"./source/images/icon.png","bookmark":"./source/images/icon.png","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"fanxiaocong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 文档","language":"zh-hans","links":{"sidebar":{"IM开发文档":"https://github.com/Eling10/im/tree/master"}},"gitbook":"3.2.3","description":"iOS IM SDK 文档"},"file":{"path":"pages/sdk_contact.md","mtime":"2020-05-19T07:13:03.679Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T07:48:31.506Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -556,6 +566,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         

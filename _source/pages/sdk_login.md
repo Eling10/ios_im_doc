@@ -27,7 +27,7 @@
 ## API介绍
 
 ### 获取登录管理实例
-SDK内部已经将登录管理对象挂载到客户端实例上，因此外部无需再实例化登录管理类，直接通过客户端实例来获取。
+`SDK` 内部已经将登录管理对象挂载到客户端实例上，因此外部无需再实例化登录管理类，直接通过客户端实例来获取。
 ```objc
 /// 获取登录实例
 ELLoginManager *login = [ELClient sharedClient].loginManager;
@@ -89,7 +89,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
 <br />
 
 ### 登出
-退出登录后，SDK会清空缓存在本地的用户数据。
+退出登录后，`SDK` 会清空缓存在本地的用户数据。
 
 ```objc
 /**

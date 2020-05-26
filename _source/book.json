@@ -22,15 +22,22 @@
         "anchors",
         "page-toc-button",
         "back-to-top-button",
-        "-lunr", "-search", "search-pro"
+        "-lunr", "-search", "search-pro",
+        "lightbox",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy e-ling.com 2017",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD"
+        },
         "anchor-navigation-ex": {
             "showLevel": false
         },
         "favicon":{
-            "shortcut": "./source/images/favicon.jpg",
-            "bookmark": "./source/images/favicon.jpg",
+            "shortcut": "./source/images/icon.png",
+            "bookmark": "./source/images/icon.png",
             "appleTouch": "./source/images/apple-touch-icon.jpg",
             "appleTouchMore": {
                 "120x120": "./source/images/apple-touch-icon.jpg",

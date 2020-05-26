@@ -14,13 +14,6 @@
     o.appId = @"您应用的AppId";
     o.appSecret = @"您应用的AppSecret";
     
-    /// IM服务相关的配置
-    ELIMOptions *imO = [ELClient sharedClient].imOptions;
-    imO.serverURL = @"";
-    imO.imURL = @"";
-    imO.chatRoomURL = @"";
-    imO.voipURL = @"";
-    
     /// 初始化 SDK 客户端
     [[ELClient sharedClient] initializeSDKWithOptions:o];
     return YES;
@@ -39,19 +32,7 @@
 | `appId` | `NSString` | 应用的 `AppId` |
 | `appSecret` | `NSString` | 应用的 `AppSecret` |
 
-> 注：`AppId` 与 `AppSecret` 是您在平台上创建应用时生成的标识，参考：[开发者注册及管理后台]()。 
-
-<br />
-
-### `ELIMOptions` 
-IM服务配置类，配置与IM相关的服务器地址。
-
-| 属性 | 类型 | 描述 | 
-| --- | --- | --- |
-| `serverURL` | `NSString` | SDK服务器地址 |
-| `imURL` | `NSString` | 消息服务的地址 |
-| `chatRoomURL` | `NSString` | 聊天室服务的地址 |
-| `voipURL` | `NSString` | 音视频服务的地址 |
+> 注：`AppId` 与 `AppSecret` 是您在平台上创建应用时生成的应用标识，参考：[开发者注册及管理后台](./app_register.md)。 
 
 <br />
 

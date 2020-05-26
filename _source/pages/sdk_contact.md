@@ -2,7 +2,7 @@
 
 管理好友的基本功能，比如添加、移除代理，添加、删除好友等。
 
-SDK对于非好友关系的双方是不能进行单聊的。
+非好友关系的双方是不能进行单聊的。
 
 <br />
 
@@ -52,7 +52,7 @@ SDK对于非好友关系的双方是不能进行单聊的。
 [[ELClient sharedClient].contactManager getContactsWithCompletion:^(NSArray<ELUserInformation *> *aList, NSError *aError) {}];
 ```
 
-> 注：好友数据都是从服务器上获取的，SDK内部不会对好友数据做存储。
+> 注：好友数据都是从服务器上获取的，`SDK` 内部不会对好友数据做存储。
 
 <br />
 

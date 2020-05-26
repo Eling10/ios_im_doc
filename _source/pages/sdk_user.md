@@ -18,7 +18,7 @@ ELUserInformation *currentUser = [ELClient sharedClient].userManager.currentUser
 <br />
 
 ### 清空当前登录用户的缓存
-当用户退出登录或者登录失效后，SDK内部会自动调用此方法来清除本地的用户数据，外部不应该主动调用此方法。
+当用户退出登录或者登录失效后，`SDK` 内部会自动调用此方法来清除本地的用户数据，外部不应该主动调用此方法。
 ```objc
 /// 清空当前登录的用户（缓存的数据会被移除）
 - (void)clearCurrentUser;
