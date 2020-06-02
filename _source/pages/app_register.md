@@ -18,13 +18,13 @@
 
 **第一步：**点击 “创建应用” 按钮，如下图：
 
-![](../assets/images/app_register_add.png)
+![](../assets/images/app_add.png)
 
 <br />
 
 **第二步：**填写创建应用的相关信息，如下图：
 
-![](../assets/images/app_register_create.png)
+![](../assets/images/app_add_info.png)
 
 > 注：Bundle ID 是您项目中的 Bundle Identifier，用来唯一标识一个 App。此处填写的是 "Explicit App ID"，不可带通配符。建议填写反向域名风格的字符串。
 
