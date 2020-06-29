@@ -41,7 +41,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
  *  用户注册
  *
  *  @param username 用户名
- *  @param password 密码（6~18位，字母+数字组合）
+ *  @param password 密码（1~50位）
  *  @param aCompletionBlock 完成的回调
  */
 - (void)registerWithUsername:(NSString *)username
@@ -57,7 +57,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
     }
 }];
 ```
-> 注：SDK对注册用户的 **密码** 做了限制，密码长度在 **6~18** 位之间，并且只能是 **数字** + **字母** 的组合。
+> 注：SDK对注册用户的 **密码** 做了限制，密码长度在 **1~50** 位之间。
 
 <br />
 
@@ -69,7 +69,7 @@ ELLoginManager *login = [ELClient sharedClient].loginManager;
  *  用户登录
  *
  *  @param username 用户名
- *  @param password 密码（6~18位，字母+数字组合）
+ *  @param password 密码（1~50位）
  *  @param aCompletionBlock 完成的回调
  */
 - (void)loginWithUsername:(NSString *)username
